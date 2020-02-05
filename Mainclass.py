@@ -1,6 +1,19 @@
 #BigData Project
 #Contributos: Abiesel, Ramphis, Alexander, Laizla & Andrea
 
-print("Let's go")
-print("Let's go")
-print("Let's go")
+import panda as pd
+import numpy as np 
+
+#input code
+
+
+#Text Analysis
+
+
+
+
+
+
+#output code
+
+
