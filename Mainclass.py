@@ -28,12 +28,12 @@ import csv
         
 
 """
-tweetlistHR = {hurricane:[], water;[], power: [], communication: [], wastewater: [], transportion:[], other: []}
+tweetlistHR = {'hurricane': [], 'water': [], 'power': [], 'communication': [], 'wastewater': [], 'transportion':[], 'other': []}
 
-tweetlistHR[hurricane] = ["hurricane Irma", "hurricane"]
-tweetlistHR[water] = ["bottle of water", "drinking water", "water", "bottled water"]
-tweetlistHR[power] = ["power off", "power down", "lost power"; "fallen power service"; 
-                "fallen power cables", "fallen power spot"; "power back", "power is back",
+tweetlistHR['hurricane'] = ["hurricane Irma", "hurricane"]
+tweetlistHR['water'] = ["bottle of water", "drinking water", "water", "bottled water"]
+tweetlistHR['power'] = ["power off", "power down", "lost power", "fallen power service", 
+                "fallen power cables", "fallen power spot", "power back", "power is back",
                 ]
 
 
