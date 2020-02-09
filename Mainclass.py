@@ -3,6 +3,7 @@
 
 #import panda as pd
 #import numpy as np 
+import csv
 
 #input code
 
@@ -27,12 +28,12 @@
         
 
 """
-tweetlistHR = {hurricane:[], water; [], power: [], communication: [], wastewater: [], transportion:[], other: []}
+tweetlistHR = {hurricane:[], water;[], power: [], communication: [], wastewater: [], transportion:[], other: []}
 
 tweetlistHR[hurricane] = ["hurricane Irma", "hurricane"]
 tweetlistHR[water] = ["bottle of water", "drinking water", "water", "bottled water"]
 tweetlistHR[power] = ["power off", "power down", "lost power"; "fallen power service"; 
-                "faller power cables", "fallen power spot"; "power back", "power is back",
+                "fallen power cables", "fallen power spot"; "power back", "power is back",
                 ]
 
 
