@@ -6,7 +6,14 @@
 import csv
 
 #input code
-
+"""
+with open('ASCE_Samples_v2.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        for col in row:
+            print (col)
+        
+"""
 
 #Text Analysis
 """
@@ -36,7 +43,30 @@ tweetlistHR['power'] = ["power off", "power down", "lost power", "fallen power s
                 "fallen power cables", "fallen power spot", "power back", "power is back",
                 ]
 
-
+text = "Friends in Overtown and Miramar already lost power"
+def textAnalysis(text):
+    txt = text.split()
+    result = [0,1,2]
+    for i in txt:
+        for j in tweetlistHR['hurricane']:
+            if(i == j):
+                result[0] = 1
+            else:
+                result[0] = 0
+        for k in tweetlistHR['water']:
+            if(i == k):
+                result[1] = 1
+            else:
+                result[1] = 0
+        for l in tweetlistHR['power']:
+            if(i == l):
+                result[2] = 1
+            else:
+                result[2] = 0
+    
+    return result
+        
+print(textAnalysis(text))
 
 
 #output code
