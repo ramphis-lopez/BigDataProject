@@ -1,19 +1,31 @@
 #BigData Project
 #Contributos: Abiesel, Ramphis, Alexander, Laizla & Andrea
 
-#import panda as pd
-#import numpy as np 
 import csv
 
+
 #input code
-"""
-with open('ASCE_Samples_v2.csv') as f:
-    reader = csv.reader(f)
+'''
+filename = input('Enter the file name: ')
+filehandle = open(filename, 'r')
+'''
+
+
+results = []
+with open('ASCE_Samples_v2.csv') as File:
+    reader = csv.DictReader(File)
     for row in reader:
-        for col in row:
-            print (col)
-        
-"""
+        results.append(row)
+'''
+    for loop saves every sentences
+'''
+sentences = []
+counter = 0
+for i in results:
+    sentences.append(results[counter]['ï»¿text'])
+    counter+= 1
+
+
 
 #Text Analysis
 """
@@ -31,10 +43,9 @@ with open('ASCE_Samples_v2.csv') as f:
     Disruption Status:
         actual disruption - 1
         not disruption - 0
-        
-        
-
 """
+
+'''
 tweetlistHR = {'hurricane': [], 'water': [], 'power': [], 'communication': [], 'wastewater': [], 'transportion':[], 'other': []}
 
 tweetlistHR['hurricane'] = ["hurricane Irma", "hurricane"]
@@ -42,31 +53,14 @@ tweetlistHR['water'] = ["bottle of water", "drinking water", "water", "bottled w
 tweetlistHR['power'] = ["power off", "power down", "lost power", "fallen power service", 
                 "fallen power cables", "fallen power spot", "power back", "power is back",
                 ]
+'''
+def evaluate_
 
-text = "Friends in Overtown and Miramar already lost power"
-def textAnalysis(text):
-    txt = text.split()
-    result = [0,1,2]
-    for i in txt:
-        for j in tweetlistHR['hurricane']:
-            if(i == j):
-                result[0] = 1
-            else:
-                result[0] = 0
-        for k in tweetlistHR['water']:
-            if(i == k):
-                result[1] = 1
-            else:
-                result[1] = 0
-        for l in tweetlistHR['power']:
-            if(i == l):
-                result[2] = 1
-            else:
-                result[2] = 0
-    
-    return result
+
+
+
         
-print(textAnalysis(text))
+#print(textAnalysis(txt))
 
 
 #output code
