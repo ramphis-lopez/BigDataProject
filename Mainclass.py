@@ -68,7 +68,7 @@ def assign_number(s):
         return 2
     elif s == 'water':
         return 3
-    elif s == 'waste water':
+    elif s == 'wastewater':
         return 4
     elif s == 'transportation':
         return 5
